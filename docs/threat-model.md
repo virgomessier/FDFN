@@ -18,7 +18,7 @@
 
 - API слушает только localhost или Unix socket.
 - Порт API не открывается в firewall.
-- vpn-manager работает без root-прав.
+- fdfn-manager работает без root-прав.
 
 ### Сканирование публичных портов
 
