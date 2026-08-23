@@ -1,7 +1,7 @@
 # 001. Do not build a backup system for SQLite in MVP
 
 ## Status
-Accepted | 2026.08.14
+Accepted | 2026-08-14
 
 ## Context  
 A non-scalable system. Average active users 5-10 (friends and relatives). Recovery comes down to re-issuing links. 1 VPS for the whole infrastructure. There is no payment system and no logins or passwords.
@@ -29,7 +29,7 @@ We do not build a backup system. Re-issuing subscriptions is faster than a backu
 If the server is gone, we lose all data on that server. Namely:
 - Private key for Reality
 - shortIds
-- inbound parameters and other settings for vpn-manager
+- inbound parameters and other settings for fdfn-manager
 
 3. What we must do now:
 - Ansible must generate a new private key for Reality on a clean deploy
