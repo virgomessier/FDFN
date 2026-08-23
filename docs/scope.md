@@ -39,8 +39,7 @@ on the managed node:
 
 After the deployment, the administrator can do the following in the Telegram bot:
 
-- Choose a protocol profile (only one for now)
-- Issue a credential and a connection link for the chosen protocol profile
+- Issue a credential and a connection link
 - Revoke a credential
 - Rotate shortIds
 - Reboot the managed node; all services start again automatically
