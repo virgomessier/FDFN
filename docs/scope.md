@@ -35,7 +35,7 @@ on the managed node:
 - Set `PermitRootLogin prohibit-password` and disable password authentication: SSH key authentication only
 - Close every port that is not required; open only the ports needed for SSH and Xray
 - Set correct permissions on directories and executable files
-- Fail2ban watches the Xray logs and bans (with nftables rules) bots, scanners and other abusive behavior
+- Fail2ban watches the sshd logs and bans (with nftables rules) the addresses that try to log in and fail
 
 After the deployment, the administrator can do the following in the Telegram bot:
 
