@@ -1,4 +1,4 @@
-# FDFN — Fast Deploy Freedom Net
+# Outpost
 
 One click between a rented VPS and a working personal proxy.
 
@@ -6,7 +6,7 @@ One click between a rented VPS and a working personal proxy.
 
 ## What it is
 
-FDFN turns a rented VPS into a personal proxy server. The administrator needs a GitHub
+Outpost turns a rented VPS into a personal proxy server. The administrator needs a GitHub
 account and a VPS. They install nothing on their own machine and open no terminal after
 the first step.
 
@@ -27,7 +27,7 @@ One VPS (1 vCPU, 1 GB RAM). One administrator. Host-native, no Docker.
 
 | Document | What is inside |
 |---|---|
-| [concept.md](docs/concept.md) | The problem, the solution, and what FDFN does not promise |
+| [concept.md](docs/concept.md) | The problem, the solution, and what Outpost does not promise |
 | [scope.md](docs/scope.md) | What the MVP includes, and what it leaves out |
 | [architecture.md](docs/architecture.md) | Components, data flows, trust boundaries |
 | [threat-model.md](docs/threat-model.md) | Assets, threats, mitigations, accepted risks |

@@ -1,6 +1,6 @@
 # Deployment
 
-This document says how FDFN reaches a rented VPS, and who does what. It is a design
+This document says how Outpost reaches a rented VPS, and who does what. It is a design
 document, not a manual. Exact commands, secret names and file paths come later, when the
 workflow exists.
 
@@ -9,15 +9,15 @@ Related: [ADR-002](adr/002-ssh-authentication.md), [ADR-003](adr/003-bootstrap-m
 ## Prerequisites
 
 - A VPS with Ubuntu 24.04 and a public IPv4 address.
-- An SSH key pair, made for FDFN only.
+- An SSH key pair, made for Outpost only.
 - A Telegram bot, created in BotFather.
-- A private repository, created from the FDFN template.
+- A private repository, created from the Outpost template.
 
 ## What the administrator does once
 
 ### 1. Create the key pair
 
-One key pair for FDFN. Do not reuse a personal key: the private key goes into GitHub
+One key pair for Outpost. Do not reuse a personal key: the private key goes into GitHub
 Secrets, and a key that opens other servers must not go there.
 
 ### 2. Put the public key on the VPS
@@ -65,7 +65,7 @@ The workflow runs by hand, from the Actions tab.
 3. Ansible runs the bootstrap play as `root`. The play creates `deploy-user`, installs the
    public key, gives `sudo`, and configures `sshd`. See ADR-003.
 4. Ansible runs the other plays as `deploy-user`. They install and configure Xray, the
-   firewall, `fdfn-manager` and the Telegram bot.
+   firewall, `outpost-manager` and the Telegram bot.
 5. It checks the result: the systemd services are running, and Xray accepts its
    configuration.
 6. It writes a short report to the GitHub Actions summary.

@@ -17,7 +17,7 @@ order form. Cheaper providers only send a root login and a password by email. Th
 target audience is not a Linux administrator, so every extra setup step was expensive.
 
 ## Decision
-The administrator owns one SSH key pair, dedicated to FDFN. The private key is stored
+The administrator owns one SSH key pair, dedicated to Outpost. The private key is stored
 in GitHub Secrets and on the administrator's own machine. The public key is placed on
 the VPS before the first workflow run, by any means the provider offers. Ansible
 authenticates with that key and never with a password.

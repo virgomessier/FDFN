@@ -29,7 +29,7 @@ We do not build a backup system. Re-issuing subscriptions is faster than a backu
 If the server is gone, we lose all data on that server. Namely:
 - Private key for Reality
 - shortIds
-- inbound parameters and other settings for fdfn-manager
+- inbound parameters and other settings for outpost-manager
 
 3. What we must do now:
 - Ansible must generate a new private key for Reality on a clean deploy

@@ -26,7 +26,7 @@ same commit that adds or supersedes an ADR.
 
 These need a decision. Each one is a candidate for the next record.
 
-- Source of truth for the Xray configuration. Does FDFN change Xray through the gRPC API,
+- Source of truth for the Xray configuration. Does Outpost change Xray through the gRPC API,
   or does it write a new config file and reload the service?
 - Hard delete or a disabled flag for a revoked credential.
 - Service accounts and privilege separation on the managed node.

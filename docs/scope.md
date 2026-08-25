@@ -26,7 +26,7 @@
 ## Definition of done
 
 One run of the Ansible workflow in GitHub Actions deploys the managed node and the
-Telegram bot that the administrator uses to control FDFN.
+Telegram bot that the administrator uses to control Outpost.
 
 Besides deploying the architecture, the workflow must perform a basic security setup
 on the managed node:

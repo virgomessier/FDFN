@@ -15,7 +15,7 @@ nothing on a healthy server. This made the step from `root` to the new user a pr
 If the playbook closes the door it came through, every next run must check the state
 of the server first.
 
-FDFN has one administrator. The new user needs `sudo` without a password, because
+Outpost has one administrator. The new user needs `sudo` without a password, because
 nobody can type a password during a workflow run. The same private key opens both
 `root` and the new user. There was no second key and no second person.
 
@@ -83,7 +83,7 @@ of strictness and get a playbook that is the same on every run.
   `/etc/ssh/sshd_config`. Ubuntu reads that directory first, and the first value of a
   key wins.
 - Remember that Ubuntu 24.04 starts `sshd` from `ssh.socket`. `Port` and
-  `ListenAddress` come from the socket unit, not from `sshd_config`. If FDFN ever
+  `ListenAddress` come from the socket unit, not from `sshd_config`. If Outpost ever
   changes the SSH port, it must edit a drop-in for `ssh.socket`.
 - Add a comment at the top of the first play: this is the only play that runs as
   `root`.
